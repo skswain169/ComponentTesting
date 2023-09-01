@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ChainingSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Create_Test(failed)">
+    <classes>
+      <class name="chaining.CreateUser">
+        <methods>
+          <include name="createUser"/>
+        </methods>
+      </class> <!-- chaining.CreateUser -->
+    </classes>
+  </test> <!-- Create_Test(failed) -->
+  <test thread-count="5" name="Get_Test(failed)">
+    <classes>
+      <class name="chaining.GetUser">
+        <methods>
+          <include name="getUser"/>
+        </methods>
+      </class> <!-- chaining.GetUser -->
+    </classes>
+  </test> <!-- Get_Test(failed) -->
+  <test thread-count="5" name="update_Test(failed)">
+    <classes>
+      <class name="chaining.UpdateUser">
+        <methods>
+          <include name="updateUser"/>
+        </methods>
+      </class> <!-- chaining.UpdateUser -->
+    </classes>
+  </test> <!-- update_Test(failed) -->
+  <test thread-count="5" name="delete_Test(failed)">
+    <classes>
+      <class name="chaining.DeleteUser">
+        <methods>
+          <include name="deleteUser"/>
+        </methods>
+      </class> <!-- chaining.DeleteUser -->
+    </classes>
+  </test> <!-- delete_Test(failed) -->
+</suite> <!-- Failed suite [ChainingSuite] -->
